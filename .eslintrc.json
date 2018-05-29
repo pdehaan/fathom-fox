@@ -1,8 +1,29 @@
 {
   "env": {
+    "amd": true,
     "browser": true,
     "es6": true,
-    "amd": true,
     "webextensions": true
+  },
+  "extends": [
+    "eslint:recommended"
+  ],
+  "globals": {
+    "download": false,
+    "elementAtPath": false,
+    "inspectedElementPath": false
+  },
+  "parserOptions": {
+    "ecmaVersion": 2017,
+    "sourceType": "module"
+  },
+  "root": true,
+  "rules": {
+    "eqeqeq": "error",
+    "indent": ["off", 4],
+    "no-console": "warn",
+    "no-var": "error",
+    "one-var": ["error", "never"],
+    "prefer-const": "error"
   }
 }

@@ -4,10 +4,12 @@
   "description": "Tools for collecting a Fathom training corpus and, eventually, debugging a ruleset",
   "scripts": {
     "build": "rollup -c",
+    "lint:js": "eslint .",
     "watch": "webpack -w"
   },
   "license": "MPL-2.0",
   "devDependencies": {
+    "eslint": "4.19.1",
     "rollup-plugin-commonjs": "^9.1.3",
     "rollup-plugin-node-resolve": "^3.3.0",
     "webpack": "^3.10.0",
